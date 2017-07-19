@@ -1,0 +1,8 @@
+.carousel .carousel-item > img{
+    width: 60%;
+    height: 60vh;
+}
+
+.fondoListo{
+    background-color: #FBD43B;
+}

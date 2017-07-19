@@ -4,6 +4,7 @@ const levelup         = require('levelup'); // Base de datos
 const morgan          = require('morgan'); // Sistema de logging (muestra en la cosa los request)
 const morganjson      = require('morgan-json');
 const apiUsers        = require('./api/users'); //Endpoints relacionados al User model
+const path = require("path");
 
 const app = express();
 const db  = levelup('./api/users', {valueEncoding: 'json'});
@@ -18,6 +19,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static('public'));
 app.use(morgan(format));
+app.use('/static', express.static(path.join(__dirname, '/node_modules')));
+app.use("/assets", express.static(path.join(__dirname, '/assets')));
+app.use("/vistas", express.static(path.join(__dirname, '/vistas')));
+
+app.get('/', function(req,res){
+    res.sendFile(__dirname + '/public/index.html');
+});
 
 let router = express.Router();
 

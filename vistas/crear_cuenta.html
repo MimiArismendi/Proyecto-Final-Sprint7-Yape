@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Registro</title>
+        <link rel="stylesheet" type="text/css" href="../static/materialize-css/dist/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    </head>
+    <body>
+        
+        <section class="container">
+            <div class="center">
+                <img class="responsive-img" src="../assets/img/icons/lockone.png">
+                <h4>Crea tu usuario Yape</h4>
+                <p>Ingresa un nombre, email y clave de usuario</p>
+            </div>
+            <div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">perm_identity</i>
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label class="center" for="icon_prefix">Name</label>
+                </div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">email</i>
+                    <input id="email" type="email" class="validate">
+                    <label class="center" for="email">Email</label>
+                </div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">lock_outline</i>
+                    <input id="password" type="password" class="validate">
+                    <label class="center" for="password">- - - - - -</label>
+                </div>
+                <p class="center">Cuida esta clave como oro, es tu acceso a <br> Yape</p>
+            </div>
+            <div class="center">
+                <a href="/vistas/registro_listo.html" class="btn waves-effect amber grey-text darken-text-2">CREAR CUENTA</a>
+            </div>
+        </section>
+        
+    <script src="../static/jquery/dist/jquery.min.js"></script>
+    <script src="../static/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+    </body>
+</html>

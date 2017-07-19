@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Registro</title>
+        <link rel="stylesheet" type="text/css" href="../static/materialize-css/dist/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    </head>
+    <body>
+        
+        <section class="container">
+            <div class="center">
+                <img src="../assets/img/icons/phone.png">
+                <h4>Para comenzar validemos tu número</h4>
+                <p>Recibirás un SMS con un código de validación</p>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">settings_cell</i>
+                    <input id="icon_telephone" type="tel" class="validate">
+                    <label for="icon_telephone">(+55)</label>
+                </div>
+            </div>
+            <form action="#">
+                <p>
+                    <input type="checkbox" id="test5" />
+                    <label for="test5">Acepto los <a>Términos y condiciones</a></label>
+                </p>
+            </form>
+            <div class="center">
+                <a href="/vistas/codigo.html" class="btn waves-effect amber grey-text darken-text-2">CONTINUAR</a>
+            </div>
+        </section>
+        
+    <script src="../static/jquery/dist/jquery.min.js"></script>
+    <script src="../static/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+    </body>
+</html>

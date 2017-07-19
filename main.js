@@ -17,4 +17,4 @@ app.get("/", function(req, res) {
     res.sendFile(__dirname + "/index.html");
 })
 
-app.listen(3000); /*el servidor está en ese puerto*/
+app.listen(1234); /*el servidor está en ese puerto*/
