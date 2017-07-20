@@ -6,3 +6,22 @@
 .fondoListo{
     background-color: #FBD43B;
 }
+
+.fondoMovimientos{
+    background-color: #38052A;
+}
+
+.iconoTelefono{
+    width: 20%;
+    height: 10vh;
+}
+
+.iconoCandado{
+    width: 8%;
+    height: 8vh;
+}
+
+.iconoReloj{
+    width: 8%;
+    height: 8vh;
+}
