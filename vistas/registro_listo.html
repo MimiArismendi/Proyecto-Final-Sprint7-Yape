@@ -8,15 +8,24 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     </head>
-    <body class="fondoListo">
+    <body class="fondoListo" onLoad="redireccionar()">
         
         <section class="container">
-            <div class="center">
-                <img src="../assets/img/icons/check.png">
-                <h4>¡Bien!<br>Ahora puedes usar Yape</h4>
+            <div class="row">
+                <div class="center col s6 offset-s3">
+                    <img class="responsive-img imgOk"src="../assets/img/icons/check.png">
+                </div>
             </div>
-            <div class="center">
-                <a href="/vistas/tarjeta.html" class="btn waves-effect amber grey-text darken-text-2">CAPTURAR TARJETA</a>
+            <div class="row">
+                <div class="center col s10 offset-s1">
+                    <h5><strong>¡Bien!</strong></h5>
+                    <h5><strong>Ahora puedes usar Yape</strong></h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="center col 6 offset-s3">
+                    <a href="/vistas/tarjeta.html" class="btn amber white-text">CAPTURAR TARJETA</a>
+                </div>
             </div>
         </section>
         

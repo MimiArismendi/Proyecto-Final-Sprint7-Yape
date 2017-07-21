@@ -3,25 +3,50 @@
     height: 60vh;
 }
 
-.fondoListo{
-    background-color: #FBD43B;
-}
-
 .fondoMovimientos{
     background-color: #38052A;
+    margin-top: -20px;
 }
 
+.homeMovimientos{
+    background-color: #451E36;
+}
+
+.textoMovimientos{
+    font-size: 18px;
+}
 .iconoTelefono{
     width: 20%;
     height: 10vh;
 }
 
-.iconoCandado{
+.iconoCandado, .iconoReloj, .iconoSigno, .iconoScan, .iconoOjo, .iconoDerecha{
     width: 8%;
     height: 8vh;
 }
 
-.iconoReloj{
-    width: 8%;
-    height: 8vh;
+.iconoNombre, .iconoMail, .iconoTarjeta, .iconoTuerca{
+    width: 12%;
+    height: 12vh;
+}
+
+.fondoListo{
+    background-color: #FBD43B;
+    color: #451E36;
+}
+
+.imgOk{
+    margin-top: 170px;
+}
+
+.imgFinales{
+    margin-top: 80px;
+}
+
+.titulos{
+    font-weight: bold;
+}
+
+hr{
+    margin-top: -20px;
 }

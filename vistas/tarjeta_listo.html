@@ -12,38 +12,41 @@
         
         <section class="container">
             <div class="row">
-                <p><i class="material-icons prefix">chevron_left</i>Volver</p>
-                <img src="../assets/img/icons/question.png">
-            </div>
-            <div class="center">
-                <img src="../assets/img/icons/bcp-logo.png">
-                <h4>Ingrgesa la clave de tu tarjeta</h4>
-                <p>Tarjeta <strong>****3263</strong></p>
+                <p class="col s3"><i class="material-icons prefix">chevron_left</i>Volver</p>
+                <div class="col s9">
+                    <img class="responsive-img iconoSigno right" src="../assets/img/icons/question.png">
+                </div>
             </div>
             <div class="row">
-                <div class="input-field col s10 offset-s1">
-                    <img src="../assets/img/icons/lock.png">
-                    <div class="input-field col s12">
-                    <input id="password" type="password" class="validate">
-                    <label for="password">****</label>
-                    <div class="preloader-wrapper big active">
-    <div class="spinner-layer spinner-blue-only">
-      <div class="circle-clipper left">
-        <div class="circle"></div>
-      </div><div class="gap-patch">
-        <div class="circle"></div>
-      </div><div class="circle-clipper right">
-        <div class="circle"></div>
-      </div>
-    </div>
-  </div>
-                
-                    <div class="center">
-                <a href="/vistas/movimientos.html" class="btn waves-effect amber grey-text darken-text-2">REGISTRAR</a>
-            </div>
+                <div class="center col s6 offset-s3">
+                   <img class="responsive-img" src="../assets/img/icons/bcp-logo.png"> 
                 </div>
             </div>
+            <div class="row">
+                <div class="center col s12">
+                    <h5 class="titulos">Ingrgesa la clave de tu tarjeta</h5>
+                    <p class="grey-text">Tarjeta <strong class="black-text">****3263</strong></p>
                 </div>
+            </div>
+            <div class="row">
+                <img class="col s2 responsive-img"src="../assets/img/icons/lock.png">
+                <div class="col s2 right">
+                    <div class="preloader-wrapper small active">
+                        <div class="spinner-layer spinner-red-only">
+                            <div class="circle-clipper left">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <input id="password" type="password" class="validate center" placeholder="*******">
+                <label for="password"></label>
+            </div> 
+            <div class="row">
+                <div class="center col s4 offset-s4">
+                    <a href="/vistas/movimientos.html" class="btn waves-effect amber white-text">REGISTRAR</a>
+                </div>
+            </div>
         </section>
         
     <script src="../static/jquery/dist/jquery.min.js"></script>
