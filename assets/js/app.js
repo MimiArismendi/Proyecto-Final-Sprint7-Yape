@@ -14,6 +14,7 @@ function validarNumeroRegistro(e){
     
     if(digitosCorrectos == 10 && $checkbox.is(":checked")){
         $botonContinuar.removeClass("disabled");
+        generarCodigoRegistro();
     }
     else{
         $terminos = false;
@@ -23,6 +24,7 @@ function validarNumeroRegistro(e){
 
 $telefono.keyup(validarNumeroRegistro);
 $checkbox.change(validarNumeroRegistro);
+
 
 //Funcionalidad de contador en sección Codigo
 var tiempo = 21;
@@ -35,7 +37,7 @@ function reintentar(){
         comenzar(contar);
         location.href = "codigo.html"
     }
-    //contar = setTimeout(reintentar,1000);
+    //contar = setTimeout(reintentar,3000);
 }
 
 /*function comenzar(contar){
@@ -44,6 +46,7 @@ function reintentar(){
 $(document).ready(reintentar);
 
 //Funcionalidad del boton Crear seccion Crear Cuenta
+//***No funciona aún***
 var $nombre = $('#icon_prefix');
 var $correo = $('#email');
 var $password = $('#password');
@@ -66,10 +69,28 @@ function validarDatos(){
 validarDatos();
  
 //Funcionalidad de enviar a otra seccion desde la seccion Registro Listo
-
 function redireccionar(){
     setTimeout("location.href='../vistas/tarjeta.html'", 3000);
 }
+
+//Extraer código de la API para la seccion de Codigo posterior al Registro
+
+
+function generarCodigoRegistro(){
+   
+   var $phone = $("#telefonoRegistro").val();
+   var $therms = $("#test5").val(); 
+    
+   $.post("http://localhost:3000/api/registerNumber",{
+    "phone": $phone, "therms": $therms
+   }).then(function(response){
+       console.log(response);
+   }).catch(function(error){
+       console.log(error);
+   })
+};
+
+
     
 
 
